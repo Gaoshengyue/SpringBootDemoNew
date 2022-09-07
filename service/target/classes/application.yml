@@ -1,0 +1,41 @@
+server:
+  port: 8089  #port
+spring:
+  profiles:
+    active: prod
+  datasource: #数据源相关
+    driver-class-name: com.mysql.jdbc.Driver  #连接器
+    type: com.alibaba.druid.pool.DruidDataSource #连接池
+    url: jdbc:mysql://192.168.59.253:3306/test?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    dbcp2: #连接池相关
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 1000
+
+  jpa:
+    database: mysql #jpa配置
+    show-sql: true #后台显示sql语句
+    hibernate:
+      ddl-auto: update  #更新不删除字段
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl  #允许驼峰
+  #      ddl-auto: validate #更新表
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 200MB
+  freemarker:
+    template-loader-path: classpath:/templates/  #模板路径
+    suffix: .html #模板文件类型
+    allow-request-override: false
+    cache: true
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
