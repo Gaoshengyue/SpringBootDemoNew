@@ -21,7 +21,7 @@ public class CommonConfig {
     public ResourceBundleMessageSource messageSource() {
         Locale.setDefault(Locale.CHINESE);
         ResourceBundleMessageSource source = new ResourceBundleMessageSource();
-        source.setBasenames("ufinErrMsg", "errMsg", "ufinLogMsg");
+        source.setBasenames("ErrMsg", "errMsg", "LogMsg");
         source.setUseCodeAsDefaultMessage(true);
         source.setDefaultEncoding("UTF-8");
         return source;
