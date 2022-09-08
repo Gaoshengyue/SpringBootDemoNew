@@ -1,7 +1,7 @@
 # SpringBoot框架Demo
-##背景
+## 背景
 使用springboot框架搭建后台服务demo，用于基础通用框架搭建及学习
-##目录结构
+## 目录结构
 ```shell script
 
 ├── core
