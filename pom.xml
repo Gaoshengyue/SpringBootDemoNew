@@ -18,12 +18,13 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <springboot.version>2.6.3</springboot.version>
+        <springboot.version>2.6.5</springboot.version>
         <mysql.version>5.0.4</mysql.version>
         <projectlombok.version>1.18.12</projectlombok.version>
 <!--        <baomidou.version>3.5.1</baomidou.version>-->
 <!--        <baomidou.dynamic.version>3.1.0</baomidou.dynamic.version>-->
         <javax.validation.version>2.0.1.Final</javax.validation.version>
+        <knife4j.version>3.0.3</knife4j.version>
     </properties>
 
     <dependencies>
@@ -109,6 +110,11 @@
 <!--            <version>${baomidou.version}</version>-->
 <!--        </dependency>-->
 
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>${knife4j.version}</version>
+        </dependency>
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
