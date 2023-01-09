@@ -1,6 +1,7 @@
 package com.springBootDemo.framework.service.auth.impl;
 
 import com.springBootDemo.framework.service.auth.AuthService;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,8 @@ import java.util.List;
  * @version 1.0
  * @date 2022/9/8 上午10:34
  */
-public class LoginServiceImpl implements AuthService {
+@Service
+public class AuthServiceImpl implements AuthService {
 
     @Override
     public List<String> TestFunction(String testString) {

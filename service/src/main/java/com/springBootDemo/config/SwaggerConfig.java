@@ -81,7 +81,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
                 .groupName("蜂巢接口")
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.ufin.honeycomb.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.springBootDemo.framework.controller"))
                 .paths(PathSelectors.any())
                 .build();
 
