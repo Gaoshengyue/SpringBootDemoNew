@@ -6,7 +6,7 @@ spring:
   datasource: #数据源相关
     driver-class-name: com.mysql.jdbc.Driver  #连接器
     type: com.alibaba.druid.pool.DruidDataSource #连接池
-    url: jdbc:mysql://192.168.59.253:3306/test?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://192.168.59.55:3306/test?useUnicode=true&characterEncoding=utf8
     username: root
     password: root
     dbcp2: #连接池相关
